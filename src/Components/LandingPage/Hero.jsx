@@ -13,7 +13,7 @@ const Hero = ({ title, subTitle }) => {
       <div className="absolute inset-0 bg-gradient-to-b from-yellow-50/10 to-white/100 z-0"></div>
     {/* konten */}
       <div className="md:ps-60 ps-6 w-2/3 pt-36 z-10">
-        <p className="text-primary w-fit text-sm bg-orange-300 px-3 py-0.5 rounded">
+        <p className="text-primary mb-1 w-fit text-sm bg-orange-300 px-3 py-0.5 rounded">
           Selamat datang di
         </p>
         <div>
