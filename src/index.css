@@ -3,6 +3,11 @@
 
 @theme {
     --font-poppins: "Poppins", sans-serif;
+    --color-primary-1: #1B1B1B;
+    --color-primary-2: #F4EFE2;
+    --color-secondary: #FFE567;
+    --color-accent-1: #F9D00A;
+    --color-accent-2: #00941B;
 }
 
 *{
