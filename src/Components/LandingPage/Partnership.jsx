@@ -1,7 +1,14 @@
 import React from 'react'
 import {logo_crc, logo_batamdev, bg_pengurus} from "../../assets/LandingPage/index.js";
+import { useNavigate } from 'react-router-dom';
 
-const Pengurus = () => {
+const Partnership = () => {
+  const navigate = useNavigate();
+
+  const navToPengurus = () => {
+    navigate('/pengurus');
+  }
+
   return (
     <section>
       <div className='flex bg-accent-1 w-full p-5 justify-center gap-30'>
@@ -17,11 +24,11 @@ const Pengurus = () => {
       <div className='flex w-full bg-primary-1 relative'>
         <img src={bg_pengurus} alt="Pengurus" className='w-full h-auto' />
         <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 sm:p-20 bg-black/10 rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer'>
-          <button onClick={() => {/*TO DO*/}} className='text-accent-1 font-semibold text-xs sm:text-sm border-4 rounded-full px-4 py-2 cursor-pointer'>Lihat Lebih Lanjut</button>
+          <button onClick={navToPengurus} className='text-accent-1 font-semibold text-xs sm:text-sm border-4 rounded-full px-4 py-2 cursor-pointer'>Lihat Lebih Lanjut</button>
         </div>
       </div>
     </section>
   )
 }
 
-export default Pengurus
+export default Partnership;

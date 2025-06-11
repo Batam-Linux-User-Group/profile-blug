@@ -1,10 +1,10 @@
 import React from "react";
-import Pengurus from "../Components/LandingPage/Pengurus";
+import Partnership from "../Components/LandingPage/Partnership";
 
 const LandingPage = () => {
   return (
     <div>
-      <Pengurus />
+      <Partnership />
     </div>
   );
 };
