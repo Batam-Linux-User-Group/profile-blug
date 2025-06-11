@@ -1,10 +1,10 @@
 import React from "react";
-import Partnership from "../Components/LandingPage/Partnership";
+import Footer from "../Components/LandingPage/Footer";
 
 const LandingPage = () => {
   return (
     <div>
-      <Partnership />
+      <Footer />
     </div>
   );
 };
