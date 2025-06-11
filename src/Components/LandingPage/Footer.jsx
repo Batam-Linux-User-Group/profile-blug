@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 // import {  }
 
 const Footer = () => {
-  return (
+  return ( 
     <>
       <div className="bg-primary-1 w-full py-10 px-4 md:px-4">
 				<div className="lg:max-w-screen-lg mx-auto">
