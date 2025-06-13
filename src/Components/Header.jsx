@@ -17,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="h-[6.25rem]">
+    <header className="w-full py-3 sticky top-0 z-50 bg-white">
       <nav className="size-full flex flex-wrap items-center justify-between">
         {/* Logo */}
         <div className='flex-1 flex justify-center'>
@@ -37,8 +37,8 @@ const Header = () => {
           }
         </ul>
         {/* OSC Regist Button */}
-        <div className="flex-1 flex justify-center text-primary-1 font-semibold group">
-          <Link to="/osc" className="bg-accent-1 border-4 border-primary-1 px-4 py-2 rounded-full group-hover:scale-105 transition-all delay-300">
+        <div className="flex-1 flex justify-center text-secondary-dark font-semibold group">
+          <Link to="/osc" className="bg-primary border-4 border-secondary-dark px-4 py-2 rounded-full group-hover:scale-105 transition-all delay-300 text-sm">
             Daftar OSC 2025
           </Link>
         </div>
@@ -49,14 +49,14 @@ const Header = () => {
 
 const NavItems = ({ label, link, isActive }) => {
   return (
-    <li className="text-primary-1 relative group flex justify-center">
+    <li className="text-secondary-dark relative group flex justify-center">
       <Link
         to={link}
         className={`${isActive ? 'font-bold' : 'font-normal'}`}
       >
         {label}
       </Link>
-      <div className={`absolute -bottom-1 bg-accent-1 transition-all delay-150 h-1 ${isActive ? 'w-1/2' : 'w-0 group-hover:w-1/2'}`} />
+      <div className={`absolute -bottom-1 bg-primary transition-all delay-150 h-1 ${isActive ? 'w-1/2' : 'w-0 group-hover:w-1/2'}`} />
     </li>
   );
 };
