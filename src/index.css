@@ -21,10 +21,10 @@
 
 @theme {
     --font-gilroy: "Gilroy", sans-serif;
-    --color-primary-1: #1B1B1B;
-    --color-primary-2: #F4EFE2;
-    --color-secondary: #FFE567;
-    --color-accent-1: #F9D00A;
+    --color-primary: #F9D00A;
+    --color-secondary-dark: #1B1B1B;
+    --color-secondary-light: #F4EFE2;
+    --color-accent-1: #FFE567;
     --color-accent-2: #00941B;
 }
 
