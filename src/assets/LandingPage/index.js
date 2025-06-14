@@ -25,8 +25,13 @@ import Dot from './ProgramUnggulan/Dot.png';
 import BelajarProgramming from './ProgramUnggulan/Belajar_Programming.png';
 import Ngoding from './ProgramUnggulan/Ngoding.png';
 
+import logo_crc from "./logo_crc.png";
+import logo_batamdev from "./logo_batamdev.png";
+import bg_pengurus from "./bg_pengurus.png";
+
 export { 
   blug, bgPoltek, garisVektor, arrow, barelang, ellipse, 
   ic_eye, ic_target, background, decorativeImage, visiBackground, misiBackground,
-  Bintang, BintangBesar, Garis, BelajarSiber, Hacker, Dot, BelajarProgramming, Ngoding
+  Bintang, BintangBesar, Garis, BelajarSiber, Hacker, Dot, BelajarProgramming, Ngoding,
+  logo_crc, logo_batamdev, bg_pengurus
 };

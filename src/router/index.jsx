@@ -8,6 +8,10 @@ const router = createBrowserRouter([
     element: <LandingPage />,
   },
   {
+    path: "/pengurus",
+    element: <h1>Hello! Ini page pengurus!</h1>
+  },
+  {
     path: "*",
     element: <NotFoundPage />,
   },
