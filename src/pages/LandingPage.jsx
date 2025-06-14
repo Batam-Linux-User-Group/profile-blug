@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../Components/Header";
+import ContactSections from "../Components/contact_sections";
 
 const LandingPage = () => {
   return (
     <div>
-      <Header />
+      <ContactSections />
     </div>
   );
 };
