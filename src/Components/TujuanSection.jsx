@@ -1,9 +1,5 @@
 import React from "react";
-import { Eye, Target } from "lucide-react";
-import background from "../assets/LandingPage/Tujuan/background.jpg";
-import decorativeImage from "../assets/LandingPage/Tujuan/decorative.png";
-import visiBackground from "../assets/LandingPage/Tujuan/visi-bg.png";
-import misiBackground from "../assets/LandingPage/Tujuan/misi-bg.png";
+import {ic_eye, ic_target, background, decorativeImage, visiBackground, misiBackground} from "../assets/LandingPage/index"
 
 const TujuanSection = () => {
   return (
@@ -30,7 +26,7 @@ const TujuanSection = () => {
           {/* Header section */}
           <div className="text-center mb-12">
             {/* Yellow tag */}
-            <div className="inline-block bg-yellow-400 text-black px-3 py-1 rounded-sm text-xs mb-4 gilroy-regular font-bold">
+            <div className="inline-block bg-yellow-400 text-black px-3 py-1 text-xs mb-4 gilroy-regular font-bold">
               Pandangan pada Masa Depan
             </div>
 
@@ -60,13 +56,13 @@ const TujuanSection = () => {
             {[
               {
                 title: "Visi Kami",
-                icon: <Eye className="w-12 h-12 text-black" />,
+                icon: <img src={ic_eye} className="w-12 h-12 text-black" />,
                 bg: visiBackground,
                 desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
               },
               {
                 title: "Misi Kami",
-                icon: <Target className="w-12 h-12 text-black" />,
+                icon: <img src={ic_target} className="w-12 h-12 text-black" />,
                 bg: misiBackground,
                 desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
               },
