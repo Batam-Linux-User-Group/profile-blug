@@ -11,6 +11,10 @@ export default {
         secondary: "#1B1B1B",
         tertiary: "#F4EFE2",
       },
+      fontFamily: {
+        gilroy: ["Gilroy-Regular", "sans-serif"],
+        gilroyHeavy: ["Gilroy-Heavy", "sans-serif"],
+      }
     },
   },
   plugins: [],
