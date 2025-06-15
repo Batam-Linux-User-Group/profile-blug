@@ -1,8 +1,5 @@
 import blug from "./blug.png";
-<<<<<<< Updated upstream
 
-export { blug };
-=======
 //FIRTS HERO SECTION ASSET
 import bgPoltek from "./Hero/BGPOLTEK.png"
 import garisVektor from "./Hero/garisVektor.png"
@@ -18,4 +15,4 @@ import lurus from "./Hero/lurus.png"
 //END
 
 export { blug, bgPoltek, garisVektor, arrow, barelang, ellipse, siber, programming, medin, inti, poltek, lurus };
->>>>>>> Stashed changes
+
