@@ -25,9 +25,9 @@ import Dot from './ProgramUnggulan/Dot.png';
 import BelajarProgramming from './ProgramUnggulan/Belajar_Programming.png';
 import Ngoding from './ProgramUnggulan/Ngoding.png';
 
-import logo_crc from "./logo_crc.png";
-import logo_batamdev from "./logo_batamdev.png";
-import bg_pengurus from "./bg_pengurus.png";
+import logo_crc from "./Partnership/logo_crc.png";
+import logo_batamdev from "./Partnership/logo_batamdev.png";
+import bg_pengurus from "./Partnership/bg_pengurus.png";
 
 export { 
   blug, bgPoltek, garisVektor, arrow, barelang, ellipse, 
