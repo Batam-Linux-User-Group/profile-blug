@@ -6,6 +6,7 @@ import TujuanSection from "../Components/LandingPage/TujuanSection";
 import ProgramUnggulan from "../Components/LandingPage/ProgramUnggulan";
 import Partnership from "../Components/LandingPage/Partnership";
 import Footer from "../Components/Footer";
+import ContactSections from "../Components/contact_sections";
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <Partnership />
       <TujuanSection />
       <ProgramUnggulan />
+      <ContactSections />
       <Footer />
     </div>
 

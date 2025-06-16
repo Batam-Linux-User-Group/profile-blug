@@ -4,6 +4,7 @@ import NotFoundPage from "../pages/NotFoundPage";
 import Tentang from "../pages/Tentang";
 import Pengurus from "../pages/Pengurus";
 import Artikel from "../pages/Artikel";
+import Kontak from "../pages/Kontak";
 
 const router = createBrowserRouter([
   {
