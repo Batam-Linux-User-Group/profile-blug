@@ -13,7 +13,7 @@ import {
 const ProgramUnggulan = () => {
   return (
     <div className="bg-white font-sans text-gray-800 overflow-x-hidden">
-      <div className="max-w-5xl mx-auto px-4 py-12 relative">
+      <div className="max-w-5xl mx-auto py-12 relative">
         <img
           src={BintangBesar}
           alt="Bintang Besar"
