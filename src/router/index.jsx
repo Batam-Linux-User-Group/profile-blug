@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import LandingPage from "../pages/LandingPage";
 import NotFoundPage from "../pages/NotFoundPage";
+import Tentang from "../pages/Tentang";
 
 const router = createBrowserRouter([
   {
@@ -9,7 +10,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/pengurus",
-    element: <h1>Hello! Ini page pengurus!</h1>
+    element: <h1>Hello! Ini page pengurus!</h1>,
+  },
+  {
+    path: "/tentang",
+    element: <Tentang />,
   },
   {
     path: "*",
