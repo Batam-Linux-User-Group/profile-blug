@@ -19,6 +19,10 @@
 
 @import "tailwindcss";
 
+.bg-contact {
+    background-image: var(--bg-contact);
+}
+
 @theme {
     --font-gilroy: "Gilroy", sans-serif;
     --color-primary: #F9D00A;
@@ -26,6 +30,9 @@
     --color-secondary-light: #F4EFE2;
     --color-accent-1: #FFE567;
     --color-accent-2: #00941B;
+    --bg-contact: url('/images/contact_illustrations.png');
+    --breakpoint-xs: 23.438rem;
+    --breakpoint-sm: 26.563rem;
 }
 
 *{
