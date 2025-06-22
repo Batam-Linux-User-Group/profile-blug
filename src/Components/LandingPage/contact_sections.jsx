@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ContactSections = () => {
   return (
     <div className="bg-contact bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center w-full h-[66.6667vh] py-20">
-      <div className="bg-primary p-3 rounded-xl mb-4 md:p-4 md:mb-5 xl:p-6 xl:mb-6 xl:rounded-2xl">
+      <div className="bg-primary p-3 rounded-xl mb-4 md:p-4 md:mb-5 xl:p-6 xl:mb-6 xl:rounded-2xl" data-aos="flip-down">
         <svg
           className="size-6 md:size-8"
           viewBox="0 0 44 44"
@@ -19,13 +19,14 @@ const ContactSections = () => {
       </div>
       <p
         className="
-      text-gray-200 font-bold text-center mb-8 px-5 leading-normal
+      text-gray-200 font-black text-center mb-8 px-5 leading-normal
       xs:px-8 xs:text-xl
       sm:text-2xl sm:max-w-2xl
       md:text-3xl
       lg:text-4xl lg:max-w-4xl
       2xl:text-5xl 2xl:max-w-none 2xl:leading-16
       "
+      data-aos="fade-up"
       >
         Butuh informasi lebih lanjut?
         <br />
@@ -41,8 +42,9 @@ const ContactSections = () => {
       md:text-base md:px-4
       2xl:py-2
       "
+      data-aos="zoom-in"
       >
-        <Link to={"#"}>Hubungi Kami!</Link>
+        <Link to={"/kontak"}>Hubungi Kami!</Link>
       </button>
     </div>
   );

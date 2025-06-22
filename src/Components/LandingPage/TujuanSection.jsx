@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import {ic_eye, ic_target, background, decorativeImage, visiBackground, misiBackground} from "../../assets/LandingPage/index"
+import { useNavigate } from "react-router-dom";
 
 const TujuanSection = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/tentang')
+  }
+
   return (
     <div
       className="text-white relative bg-cover bg-center bg-no-repeat py-10"
@@ -26,12 +33,12 @@ const TujuanSection = () => {
           {/* Header section */}
           <div className="text-center mb-12">
             {/* Yellow tag */}
-            <div className="inline-block bg-primary text-gray-800 px-3 py-1 text-xs mb-4 font-bold">
+            <div className="inline-block bg-primary text-gray-800 px-3 py-1 text-xs mb-4 font-bold" data-aos="flip-down">
               Pandangan pada Masa Depan
             </div>
 
             {/* Main title */}
-            <h1 className="text-4xl md:text-5xl font-black mb-6">
+            <h1 className="text-4xl md:text-5xl font-black mb-6" data-aos="fade-up">
               Tujuan Utama <span className="text-primary">BLUG</span>
             </h1>
 
@@ -44,7 +51,7 @@ const TujuanSection = () => {
                     backgroundImage: `url(${decorativeImage})`,
                   }}
                 ></div>
-                <p className="text-gray-200 text-base leading-relaxed pt-2">
+                <p className="text-gray-200 text-base leading-relaxed pt-2" data-aos="fade-right">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -62,17 +69,21 @@ const TujuanSection = () => {
                 icon: <img src={ic_eye} className="w-12 h-12 text-gray-800" />,
                 bg: visiBackground,
                 desc: "Menjadikan BLUG sebagai organisasi yang memprioritaskan kepedulian terhadap setiap anggota,membatu mereka berkembang dalam hardskill & softskill, serta memberikan kontribusi yang bermakna bagi masyarakat luas",
+                aos: "flip-left"
               },
               {
                 title: "Misi Kami",
                 icon: <img src={ic_target} className="w-12 h-12 text-gray-800" />,
                 bg: misiBackground,
                 desc: `Melibatkan semua anggota dalam kolaborasi setiap kegiatan BLUG, aktif dalam pengembangan mutu anggota, dan memberikan kontribusi yang bermanfaat bagi masyarakat luas, terutaman di kalangan mahasiswa Polibatam `,
+                aos: "flip-right"
               },
             ].map((item, idx) => (
               <div
                 key={idx}
                 className="flex flex-col relative w-full h-80 bg-[#3e3e3e] overflow-hidden group rounded-2xl border-4 border-transparent hover:border-primary transition-colors duration-700 justify-center items-center"
+                data-aos={item.aos}
+                data-aos-delay="200"
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-700"
@@ -96,8 +107,8 @@ const TujuanSection = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="text-center">
-            <button className="bg-transparent border-3 border-primary text-primary  px-6 py-2 rounded-full text-sm font-bold hover:bg-primary hover:text-gray-800 hover:border-3 hover:shadow-md hover:shadow-primary hover:border-secondary-dark transition-all duration-300 cursor-pointer">
+          <div className="text-center" data-aos="zoom-in">
+            <button onClick={handleClick} className="bg-transparent border-3 border-primary text-primary  px-6 py-2 rounded-full text-sm font-bold hover:bg-primary hover:text-gray-800 hover:border-3 hover:shadow-md hover:shadow-primary hover:border-secondary-dark transition-all duration-300 cursor-pointer">
               Lihat Lebih Lanjut
             </button>
           </div>

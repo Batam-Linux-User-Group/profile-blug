@@ -26,13 +26,13 @@ const ProgramUnggulan = () => {
         />
 
         <div className="text-center">
-          <div className="inline-block bg-primary font-bold px-6 py-1 mb-2">
+          <div className="inline-block bg-primary font-bold px-6 py-1 mb-2" data-aos="flip-down">
             Keseruan Belajar Bareng
           </div>
-          <h1 className="text-4xl font-extrabold mb-2">
+          <h1 className="text-4xl font-extrabold mb-2" data-aos="fade-up">
             Program Unggulan: BLUGCAMP!
           </h1>
-          <div className="relative">
+          <div className="relative" data-aos="fade-left">
             <img
               src={Garis}
               alt="Garis"
@@ -44,6 +44,7 @@ const ProgramUnggulan = () => {
         <div
           className="group lg:max-w-screen-lg mx-auto rounded-xl flex items-center justify-between px-6 py-10 mt-16 shadow transition-shadow hover:shadow-[0_0_30px_#facc15] overflow-hidden relative duration-1000 ease-in-out"
           style={{ backgroundColor: "#fefce8" }}
+          data-aos="flip-up"
         >
           <div
             className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -57,14 +58,13 @@ const ProgramUnggulan = () => {
               Belajar Linux Bareng Siber
             </h2>
             <p className="text-sm mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Divisi Siber ngajak kamu kenalan lebih dalam dengan Linux dan dunia keamanan siber lewat kegiatan seru sepanjang tahun.
             </p>
             <div className="flex items-start space-x-3">
               <img src={Dot} alt="Bullet" className="w-3 h-16" />
               <div className="font-bold text-sm">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                <p className="mt-4">Lorem ipsum dolor sit amet</p>
+                <p>BLUGCamp: Belajar Linux dan dasar-dasar keamanan siber dari nol!</p>
+                <p className="mt-4">BnB & Workshop: Ngulik topik keamanan siber bareng pemateri kece!</p>
               </div>
             </div>
           </div>
@@ -78,6 +78,7 @@ const ProgramUnggulan = () => {
         <div
           className="group lg:max-w-screen-lg mx-auto rounded-xl flex items-center justify-between px-6 py-10 mt-6 shadow transition-shadow hover:shadow-[0_0_30px_#facc15] overflow-hidden relative duration-1000 ease-in-out"
           style={{ backgroundColor: "#fefce8" }}
+          data-aos="flip-down"
         >
           <div
             className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -91,14 +92,13 @@ const ProgramUnggulan = () => {
               Ngoding Bareng Programming
             </h2>
             <p className="text-sm mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Divisi Programming siap nemenin kamu belajar ngoding sambil seru-seruan bareng teman-teman sefrekuensi!
             </p>
             <div className="flex items-start space-x-3">
               <img src={Dot} alt="Bullet" className="w-3 h-16" />
               <div className="text-sm font-bold text-gray-800 group-hover:text-white">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                <p className="mt-4">Lorem ipsum dolor sit amet</p>
+                <p>BLUGCamp: Bootcamp internal buat kamu yang pengen jago ngoding!</p>
+                <p className="mt-4">BnB & Workshop: Belajar ngoding dari pemateri berpengalaman!</p>
               </div>
             </div>
           </div>

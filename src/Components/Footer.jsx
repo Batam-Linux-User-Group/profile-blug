@@ -11,13 +11,13 @@ const Footer = () => {
 						<div className="md:w-[33%] w-full md:text-end px-15 text-white text-center">
 							<h3 className='font-bold text-2xl mb-3.5'>Quick Links</h3>
 							<div className="flex decoration-white flex-col text-sm gap-y-2">
-								<Link className='no-underline hover:underline' href="#">
+								<Link className='no-underline hover:underline' to={'/tentang'}>
 									<p>Tentang</p>
 								</Link>
-								<Link className='no-underline hover:underline' href="#">
+								<Link className='no-underline hover:underline' to={'/pengurus'}>
 									<p>Pengurus</p>
 								</Link>
-								<Link className='no-underline hover:underline' href="#">
+								<Link className='no-underline hover:underline' to={'/artikel'}>
 									<p>Artikel</p>
 								</Link>
 							</div>

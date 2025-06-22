@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header className="w-full py-3 sticky top-0 z-50 bg-white shadow-[0_4px_12px_-2px_rgba(255,229,103,0.3)]">
-      <nav className="lg:max-w-screen-lg mx-auto flex flex-wrap items-center justify-between">
+      <nav data-aos="fade-down" className="lg:max-w-screen-lg mx-auto flex flex-wrap items-center justify-between">
         {/* Logo */}
         <div className='flex-1 flex justify-start'>
           <img src="nav-logo.svg" alt="Logo BLUG" />
