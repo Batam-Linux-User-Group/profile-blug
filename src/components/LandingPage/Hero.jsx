@@ -2,9 +2,6 @@ import React from "react";
 import {
   arrow,
   arrowYellow,
-  barelang,
-  bgPoltek,
-  ellipse,
   garisVektor,
 } from "../../assets/LandingPage";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +15,7 @@ const Hero = ({ title, subTitle }) => {
 
   return (
     <>
-    <div className="relative bg-cover bg-center flex h-187 overflow-x-hidden" style={{ backgroundImage: `url(${bgPoltek})` }}>
+    <div className="relative bg-cover bg-center flex h-187 overflow-x-hidden" style={{ backgroundImage: `url(/images/bgPoltek.webp)` }}>
       <div className="absolute inset-0 bg-gradient-to-b from-yellow-50/10 to-white/100 z-0">
       </div>
       {/* konten */}
@@ -49,8 +46,8 @@ const Hero = ({ title, subTitle }) => {
         </div>
       </div>
 
-      <div className="w-[45%] z-0 absolute right-0 bg-cover hidden md:block" style={{ backgroundImage: `url(${ellipse})` }} data-aos="fade-left" data-aos-delay="800">
-        <img src={barelang} alt="barelang" />
+      <div className="w-[45%] z-0 absolute right-0 bg-cover hidden md:block" style={{ backgroundImage: `url(/images/ellipse.webp)` }} data-aos="fade-left" data-aos-delay="800">
+        <img src="/images/barelang.webp" alt="barelang" />
       </div>
 
       {/* Bagian kanan (gambar ellipse + barelang) */}
