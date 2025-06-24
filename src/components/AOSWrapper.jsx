@@ -11,6 +11,10 @@ const AOSWrapper = () => {
       duration: 1000,
       once: true,
     });
+
+    setTimeout(() => {
+      Aos.refresh();
+    }, 100);
   }, []);
 
   useEffect(() => {
