@@ -29,9 +29,8 @@ const VideoSection = () => {
                 Video Profil BLUG 2025
               </h2>
               <p className="text-gray-600 mb-5 text-justify" data-aos="fade-up" data-aos-delay="400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Yuk, kenalan lebih dekat dengan kami. Lihat siapa saja yang menjalankan organisasi ini, dengarkan suara mereka, 
+                dan rasakan semangat yang kami bawa di setiap kegiatan. Mereka bukan hanya anggota — mereka adalah wajah dari semangat kami!
               </p>
               <div data-aos="zoom-in" data-aos-delay="400">
                 <button onClick={goToYoutube} className="px-6 py-2 rounded-full font-bold border-4 border-gray-800 bg-primary text-gray-800 transition duration-200 hover:bg-gray-800 hover:text-primary hover:border-primary shadow-md active:bg-gray-800 active:text-primary active:shadow-inner cursor-pointer">

@@ -52,13 +52,13 @@ const ProgramUnggulan = () => {
           ></div>
           <div className="relative max-w-lg z-10 text-gray-800 group-hover:text-white transition-colors duration-300">
             <span className="text-xs bg-primary px-3 py-1 rounded-full font-bold border-2 border-primary transition-all duration-300 group-hover:bg-transparent group-hover:text-white">
-              Ga cuman Windows! Yuk
+              Yuk, Kenal Linux Lebih Dalam!
             </span>
             <h2 className="text-2xl font-black mt-2 mb-3 underline decoration-primary">
               Belajar Linux Bareng Siber
             </h2>
             <p className="text-sm mb-4">
-              Divisi Siber ngajak kamu kenalan lebih dalam dengan Linux dan dunia keamanan siber lewat kegiatan seru sepanjang tahun.
+              Divisi Siber mengajak kamu kenalan lebih dalam dengan Linux dan dunia keamanan siber lewat kegiatan seru.
             </p>
             <div className="flex items-start space-x-3">
               <img src={Dot} alt="Bullet" className="w-3 h-16" />
@@ -86,7 +86,7 @@ const ProgramUnggulan = () => {
           ></div>
           <div className="relative max-w-lg z-10 text-gray-800 group-hover:text-white transition-colors duration-300">
             <span className="text-xs bg-primary px-3 py-1 rounded-full font-bold border-2 border-primary transition-all duration-300 group-hover:bg-transparent group-hover:text-white">
-              Pengen buat Website? Yuk
+              Pengen Belajar Buat Website? Yuk
             </span>
             <h2 className="text-2xl font-black mt-2 mb-3 underline decoration-primary">
               Ngoding Bareng Programming

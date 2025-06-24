@@ -52,10 +52,9 @@ const TujuanSection = () => {
                   }}
                 ></div>
                 <p className="text-gray-200 text-base leading-relaxed pt-2" data-aos="fade-right">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Menjadikan BLUG sebagai ruang belajar dan berkembang untuk semua, baik anggota internal maupun eksternal, 
+                  yang ingin mendalami Linux dan ekosistem open source. Kami mendorong semangat eksplorasi, kontribusi, dan berbagi 
+                  ilmu melalui berbagai program edukatif dan komunitas yang suportif.
                 </p>
               </div>
             </div>
@@ -68,14 +67,14 @@ const TujuanSection = () => {
                 title: "Visi Kami",
                 icon: <img src={ic_eye} className="w-12 h-12 text-gray-800" />,
                 bg: visiBackground,
-                desc: "Menjadikan BLUG sebagai organisasi yang memprioritaskan kepedulian terhadap setiap anggota,membatu mereka berkembang dalam hardskill & softskill, serta memberikan kontribusi yang bermakna bagi masyarakat luas",
+                desc: "Menjadikan BLUG sebagai organisasi yang memprioritaskan kepedulian terhadap setiap anggota,membantu mereka berkembang dalam hard skill & soft skill. serta memberikan kontribusi yang bermakna bagi masyarakat luas",
                 aos: "flip-left"
               },
               {
                 title: "Misi Kami",
                 icon: <img src={ic_target} className="w-12 h-12 text-gray-800" />,
                 bg: misiBackground,
-                desc: `Melibatkan semua anggota dalam kolaborasi setiap kegiatan BLUG, aktif dalam pengembangan mutu anggota, dan memberikan kontribusi yang bermanfaat bagi masyarakat luas, terutaman di kalangan mahasiswa Polibatam `,
+                desc: `Melibatkan semua anggota dalam kolaborasi setiap kegiatan BLUG, aktif dalam pengembangan mutu anggota, dan memberikan kontribusi yang bermanfaat bagi masyarakat luas, terutaman di kalangan Mahasiswa Politeknik Negei Batam `,
                 aos: "flip-right"
               },
             ].map((item, idx) => (
