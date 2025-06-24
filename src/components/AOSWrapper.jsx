@@ -7,14 +7,23 @@ const AOSWrapper = () => {
   const location = useLocation();
 
   useEffect(() => {
-    Aos.init({
+    const handleLoad = () => {
+     Aos.init({
       duration: 1000,
       once: true,
     });
 
     setTimeout(() => {
       Aos.refresh();
-    }, 100);
+    }, 200); 
+    };
+
+    if (document.readyState === 'complete') {
+      handleLoad()
+    } else {
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
+    }
   }, []);
 
   useEffect(() => {
