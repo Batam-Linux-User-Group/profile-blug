@@ -10,11 +10,13 @@ const AOSWrapper = () => {
     Aos.init({
       duration: 1000,
       once: true,
-    })
-  })
+    });
+  }, []);
 
   useEffect(() => {
-    Aos.refresh();
+    requestAnimationFrame(() => {
+      Aos.refresh();
+    });
   }, [location.pathname])
 
   return <Outlet />

@@ -24,7 +24,7 @@ const ScrollToTop = () => {
         transition-all duration-500 ease-in-out transform
         ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5 pointer-events-none'}`}
     >
-      <img src="public/icon/ic_arrow_up.svg" alt="Arrow Up" />
+      <img src="/icon/ic_arrow_up.svg" alt="Arrow Up" />
     </div>
   )
 }
