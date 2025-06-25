@@ -34,7 +34,6 @@
     --breakpoint-xs: 23.438rem;
     --breakpoint-sm: 26.563rem;
 }
-
 *{
     font-family: var(--font-gilroy)
 }
