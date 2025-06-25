@@ -5,9 +5,11 @@ import VideoSection from "../components/LandingPage/VideoSection";
 import TujuanSection from "../components/LandingPage/TujuanSection";
 import ProgramUnggulan from "../components/LandingPage/ProgramUnggulan";
 import Partnership from "../components/LandingPage/Partnership";
+import VisiMisiBlug from "../components/LandingPage/VisiMisiBlug";
 import Footer from "../components/Footer";
 import ContactSections from "../components/LandingPage/contact_sections";
 import ScrollToTop from "../components/ScrollToTop";
+
 
 const LandingPage = () => {
   return (
@@ -19,6 +21,7 @@ const LandingPage = () => {
       <TujuanSection />
       <ProgramUnggulan />
       <ContactSections />
+      <VisiMisiBlug />
       <Footer />
       <ScrollToTop />
     </div>

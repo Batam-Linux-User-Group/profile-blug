@@ -31,10 +31,15 @@ import logo_crc from "./Partnership/logo_crc.png";
 import logo_batamdev from "./Partnership/logo_batamdev.png";
 import bg_pengurus from "./Partnership/bg_pengurus.png";
 
+import ArrowVisiMisi from "./VisiMisiBlug/ArrowVisiMisi.png";
+import Next from "./VisiMisiBlug/Next.png";
+import FotoBlug from "./VisiMisiBlug/FotoBlug.png";
+import Lingkaran from "./VisiMisiBlug/Lingkaran.png";
+
 export { 
   blug, garisVektor, arrow, arrowYellow,
   longArrow1, longArrow2, bgStar,
   ic_eye, ic_target, background, decorativeImage, visiBackground, misiBackground,
   Bintang, BintangBesar, Garis, BelajarSiber, Hacker, Dot, BelajarProgramming, Ngoding,
-  logo_crc, logo_batamdev, bg_pengurus
+  logo_crc, logo_batamdev, bg_pengurus, ArrowVisiMisi, Next, FotoBlug, Lingkaran
 };
