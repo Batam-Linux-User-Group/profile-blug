@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
-import HubungiKami from "../Components/HubungiKami";
-import Hero from "../Components/hero";
+import Hero from "../Components/AltHero";
 
 const LandingPage = () => {
   return (
