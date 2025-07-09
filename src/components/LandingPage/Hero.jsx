@@ -15,7 +15,7 @@ const Hero = ({ title, subTitle }) => {
 
   return (
     <>
-    <div className="relative bg-cover bg-center flex h-187 overflow-x-hidden" style={{ backgroundImage: `url(/images/bgPoltek.webp)` }}>
+    <div className="relative bg-cover bg-center flex h-187 overflow-hidden" style={{ backgroundImage: `url(/images/bgPoltek.webp)` }}>
       <div className="absolute inset-0 bg-gradient-to-b from-yellow-50/10 to-white/100 z-0">
       </div>
       {/* konten */}

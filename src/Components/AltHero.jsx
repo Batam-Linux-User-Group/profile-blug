@@ -11,10 +11,10 @@ const Hero = ({ label, title, addStyle }) => {
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-yellow-400 bg-opacity-60 inline-block px-4 py-1 text-sm font-bold">
+      <div className="bg-yellow-400 bg-opacity-60 inline-block px-4 py-1 text-sm font-bold" data-aos="flip-down">
         {label}
       </div>
-      <h2 className="text-3xl md:text-4xl font-black mt-4">
+      <h2 className="text-3xl md:text-4xl font-black mt-4" data-aos="zoom-in">
         {title} <br />
         {(() => {
           switch (addStyle) {

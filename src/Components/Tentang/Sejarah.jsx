@@ -18,19 +18,19 @@ const Sejarah = () => {
         {/* Konten */}
         <div className="text-left w-full max-w-5xl">
           {/* Label */}
-          <p className="text-sm font-semibold text-black bg-primary inline-block px-6 py-1 rounded-full mb-2">
+          <p className="text-sm font-semibold text-black bg-primary inline-block px-6 py-1 rounded-full mb-2" data-aos="flip-up">
             Penasaran ga sih?
           </p>
           <br />
           {/* Judul */}
-          <h2 className="text-3xl md:text-4xl font-gilroy font-extrabold mb-8 inline-block border-b-[5px] border-primary pb-1">
+          <h2 className="text-3xl md:text-4xl font-gilroy font-extrabold mb-8 inline-block border-b-[5px] border-primary pb-1" data-aos="fade-right">
             Sejarah terbentuknya Batam Linux User Group
           </h2>
 
           <div className="flex flex-col md:flex-row gap-8 items-start">
             {/* Paragraf Kiri */}
             <div className="md:w-[50%]">
-              <p className="text-tertiary leading-relaxed text-justify">
+              <p className="text-tertiary leading-relaxed text-justify" data-aos="fade-left" data-aos-delay="300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam,{" "}
@@ -48,7 +48,7 @@ const Sejarah = () => {
             <div className="hidden md:block w-px bg-gray-300  self-stretch" />
 
             {/* Quote + List */}
-            <div className="md:w-[45%] flex flex-col gap-6">
+            <div className="md:w-[45%] flex flex-col gap-6" data-aos="fade-right" data-aos-delay="500">
               {/* Quote Card */}
               <div className="bg-primary text-black font-extrabold  text-2xl rounded-xl py-8 px-10 shadow-xl font-gilroyHeavy text-center">
                 “Lorem Ipsum Dolor sit amet”

@@ -67,7 +67,7 @@ const TujuanSection = () => {
                 title: "Visi Kami",
                 icon: <img src={ic_eye} className="w-12 h-12 text-gray-800" />,
                 bg: visiBackground,
-                desc: "Menjadikan BLUG sebagai organisasi yang memprioritaskan kepedulian terhadap setiap anggota,membantu mereka berkembang dalam hard skill & soft skill. serta memberikan kontribusi yang bermakna bagi masyarakat luas",
+                desc: "Menjadikan BLUG sebagai organisasi yang memprioritaskan kepedulian terhadap setiap anggota, membantu mereka berkembang dalam hard skill & soft skill. serta memberikan kontribusi yang bermakna bagi masyarakat luas",
                 aos: "flip-left"
               },
               {
