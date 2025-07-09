@@ -4,6 +4,7 @@ import Sejarah from "../Components/Tentang/Sejarah";
 import VisiMisiBlug from "../Components/Tentang/VisiMisiBlug";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Tentang = () => {
   return (
@@ -13,6 +14,7 @@ const Tentang = () => {
       <Sejarah />
       <VisiMisiBlug />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

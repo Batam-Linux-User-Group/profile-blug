@@ -50,7 +50,7 @@ const Sejarah = () => {
             {/* Quote + List */}
             <div className="md:w-[45%] flex flex-col gap-6" data-aos="fade-right" data-aos-delay="500">
               {/* Quote Card */}
-              <div className="bg-primary text-black font-extrabold  text-2xl rounded-xl py-8 px-10 shadow-xl font-gilroyHeavy text-center">
+              <div className="bg-primary text-black font-black  text-2xl rounded-xl py-8 px-10 shadow-xl font-gilroyHeavy text-center">
                 “Lorem Ipsum Dolor sit amet”
               </div>
 
