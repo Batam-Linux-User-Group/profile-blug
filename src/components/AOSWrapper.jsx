@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import StartAtTop from './StartAtTop';
 
 const AOSWrapper = () => {
   const location = useLocation();
@@ -32,7 +33,12 @@ const AOSWrapper = () => {
     });
   }, [location.pathname])
 
-  return <Outlet />
+  return(
+    <>
+      <StartAtTop />
+      <Outlet />
+    </>
+  ) 
 }
 
 export default AOSWrapper
