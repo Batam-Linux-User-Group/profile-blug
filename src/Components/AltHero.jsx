@@ -25,8 +25,10 @@ const Hero = ({ label, title, addStyle }) => {
                   <img src="src/assets/AltHero/line_green.png" alt="Green Line" className=" relative w-60 self-center left-5" />
                 </div>
               )
-            case "pengurus":
-              
+            case "kontak":
+              return(
+                <div>Hubungi Kami</div>
+              )
           }})()}
       </h2>
     </div>
