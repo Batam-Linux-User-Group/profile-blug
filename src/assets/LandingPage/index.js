@@ -1,11 +1,13 @@
 import blug from "./blug.png";
 //FIRTS HERO SECTION ASSET
-import bgPoltek from "./Hero/BGPOLTEK.png"
-import garisVektor from "./Hero/garisVektor.png"
-import arrow from "./Hero/arrow.png"
-import barelang from "./Hero/barelang.png"
-import ellipse from "./Hero/Ellipse.png"
+import garisVektor from "./Hero/garisVektor.png";
+import arrow from "./Hero/arrow.svg";
+import arrowYellow from "./Hero/arrow-yellow.svg";
 //END
+
+import longArrow1 from "./VideoSection/long-arrow-1.svg";
+import longArrow2 from "./VideoSection/long-arrow-2.svg";
+import bgStar from "./VideoSection/bg-star.png";
 
 //FIRTS TUJUAN SECTION ASSET
 import ic_eye from "./Tujuan/ic_eye.svg";
@@ -29,9 +31,15 @@ import logo_crc from "./Partnership/logo_crc.png";
 import logo_batamdev from "./Partnership/logo_batamdev.png";
 import bg_pengurus from "./Partnership/bg_pengurus.png";
 
+import ArrowVisiMisi from "./VisiMisiBlug/ArrowVisiMisi.png";
+import Next from "./VisiMisiBlug/Next.png";
+import FotoBlug from "./VisiMisiBlug/FotoBlug.png";
+import Lingkaran from "./VisiMisiBlug/Lingkaran.png";
+
 export { 
-  blug, bgPoltek, garisVektor, arrow, barelang, ellipse, 
+  blug, garisVektor, arrow, arrowYellow,
+  longArrow1, longArrow2, bgStar,
   ic_eye, ic_target, background, decorativeImage, visiBackground, misiBackground,
   Bintang, BintangBesar, Garis, BelajarSiber, Hacker, Dot, BelajarProgramming, Ngoding,
-  logo_crc, logo_batamdev, bg_pengurus
+  logo_crc, logo_batamdev, bg_pengurus, ArrowVisiMisi, Next, FotoBlug, Lingkaran
 };
