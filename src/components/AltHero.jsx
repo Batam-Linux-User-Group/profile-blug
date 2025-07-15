@@ -1,7 +1,7 @@
 import React from "react";
 import background from "../assets/HubungiPage/background.png"; // Import tetap di sini
 
-const Hero = ({ label, title, addStyle }) => {
+const AltHero = ({ label, title, addStyle }) => {
   return (
     <div
       className="w-full bg-cover bg-center py-32 text-center text-black"
@@ -35,4 +35,4 @@ const Hero = ({ label, title, addStyle }) => {
   );
 };
 
-export default Hero;
+export default AltHero;
