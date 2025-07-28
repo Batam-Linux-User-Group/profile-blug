@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   let outDir = 'dist' // default
 
   if (mode === 'prod') {
-    outDir = '/var/www'
+    outDir = '/var/www/profile-blug'
   }
 
   return {
