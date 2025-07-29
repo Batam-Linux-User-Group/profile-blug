@@ -38,9 +38,9 @@ const Header = () => {
         </ul>
         {/* OSC Regist Button */}
         <div className="flex-1 flex justify-end text-secondary-dark font-bold group">
-          <Link to="/osc" className="bg-primary border-4 border-secondary-dark px-4 py-2 rounded-full group-hover:scale-105 transition-all delay-300 text-sm">
+          <a href="/osc" className="bg-primary border-4 border-secondary-dark px-4 py-2 rounded-full group-hover:scale-105 transition-all delay-300 text-sm">
             Daftar OSC 2025
-          </Link>
+          </a>
         </div>
       </nav>
     </header>
