@@ -38,7 +38,7 @@ const VideoSection = () => {
           </div> */}
           <div className="aspect-video min-h-72 bg-blue-400 rounded-xl overflow-hidden">
             <iframe
-              src="https://www.youtube.com/embed/KVg1S_l90NU?si=3vROs1i6nAOu9_x9&autoplay=1"
+              src="https://www.youtube.com/embed/eQtabWVthvk?si=Vf7dMce4vPxsgpny&autoplay=1"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
