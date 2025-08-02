@@ -92,9 +92,9 @@ const Hero = ({ title, subTitle }) => {
             </div>
 
             <motion.div
-              initial={{opacity: 0, x: 2, y: 2, scale: 0}}
+              initial={{opacity: 0, x: 2, y: 2, scale: 0.8}}
               animate={{opacity: 1, x: 0, y: 0, scale: 1}}
-              transition={{delay: 1, duration: 0.8, ease: easeInOut}}
+              transition={{delay: 1, duration: 0.5, ease: easeInOut}}
             >
               <button
                 onClick={handleClick}

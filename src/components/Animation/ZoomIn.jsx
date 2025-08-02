@@ -1,11 +1,11 @@
 import React from 'react'
 import { easeOut, motion } from 'motion/react'
 
-const FadeLeft = ({children, delay = 0}) => {
+const ZoomIn = ({children, delay = 0}) => {
   return (
     <motion.div
-      initial={{opacity: 0, x: 50}}
-      whileInView={{opacity: 1, x: 0}}
+      initial={{opacity: 0, scale: 0.8}}
+      whileInView={{opacity: 1, scale: 1}}
       viewport={{once: true, amount:0.5}}
       transition={{ duration: 0.5, delay, ease: easeOut }}
     >
@@ -14,4 +14,4 @@ const FadeLeft = ({children, delay = 0}) => {
   )
 }
 
-export default FadeLeft
+export default ZoomIn

@@ -1,5 +1,8 @@
 import React from 'react';
 import { longArrow1, longArrow2, bgStar } from '../../assets/LandingPage';
+import { delay } from 'motion';
+import { motion } from 'motion/react';
+import FadeLeft from '../Animation/FadeLeft';
 
 const VideoSection = () => {
   const goToYoutube = () => {
@@ -17,12 +20,13 @@ const VideoSection = () => {
     >
       <div className="lg:max-w-screen-lg mx-auto">
         <div className="flex relative flex-col md:flex-row items-center gap-8">
-          <img
+          <motion.img
             src={longArrow1}
             alt="arrow"
             className="absolute w-3/4.5 -top-125 ps-3.5"
-            data-aos="fade-up"
-            data-aos-delay="1500"
+            initial={{opacity: 0, y: 50}}
+            animate={{opacity:1, y:0}}
+            transition={{delay:1.5, duration:0.5}}
           />
           <img
             src={longArrow2}
@@ -51,13 +55,11 @@ const VideoSection = () => {
           {/* Content */}
           <div className="w-full md:flex-1 flex justify-center md:justify-start">
             <div className="w-full max-w-[550px]">
-              <span
-                className="inline-block bg-primary text-gray-800 text-sm font-bold px-2 py-1 mb-2"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
-                Siapa Kami?
-              </span>
+              <FadeLeft>
+                <span className="inline-block bg-primary text-gray-800 text-sm font-bold px-2 py-1 mb-2">
+                  Siapa Kami?
+                </span>
+              </FadeLeft>
               <h2
                 className="text-3xl font-extrabold text-gray-800 mb-4 leading-tight"
                 data-aos="fade-right"
