@@ -1,8 +1,22 @@
 import React, { useState } from "react";
 import {ic_eye, ic_target, background, decorativeImage, visiBackground, misiBackground} from "../../assets/LandingPage/index"
 import { useNavigate } from "react-router-dom";
+import FlipDown from "../Animation/FlipDown";
+import FadeUp from "../Animation/FadeUp";
+import FadeRight from "../Animation/FadeRight";
+import { motion, easeOut } from "motion/react";
+import ZoomIn from "../Animation/ZoomIn";
 
 const TujuanSection = () => {
+  const variantsVisi = {
+    hidden: {opacity: 0, rotateY: -90},
+    visible: {opacity: 1, rotateY: 0}
+  }
+  const variantsMisi = {
+    hidden: {opacity: 0, rotateY: 90},
+    visible: {opacity: 1, rotateY: 0}
+  }  
+
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -33,14 +47,18 @@ const TujuanSection = () => {
           {/* Header section */}
           <div className="text-center mb-12">
             {/* Yellow tag */}
-            <div className="inline-block bg-primary text-gray-800 px-3 py-1 text-xs mb-4 font-bold" data-aos="flip-down">
-              Pandangan pada Masa Depan
-            </div>
+            <FlipDown>
+              <div className="inline-block bg-primary text-gray-800 px-3 py-1 text-xs mb-4 font-bold">
+                Pandangan pada Masa Depan
+              </div>
+            </FlipDown>
 
             {/* Main title */}
-            <h1 className="text-4xl md:text-5xl font-black mb-6" data-aos="fade-up">
-              Tujuan Utama <span className="text-primary">BLUG</span>
-            </h1>
+            <FadeUp>
+              <h1 className="text-4xl md:text-5xl font-black mb-6">
+                Tujuan Utama <span className="text-primary">BLUG</span>
+              </h1>
+            </FadeUp>
 
             {/* Quote marks and description */}
             <div className="max-w-2xl mx-auto mb-8">
@@ -51,11 +69,13 @@ const TujuanSection = () => {
                     backgroundImage: `url(${decorativeImage})`,
                   }}
                 ></div>
-                <p className="text-gray-200 text-base leading-relaxed pt-2" data-aos="fade-right">
-                  Menjadikan BLUG sebagai ruang belajar dan berkembang untuk semua, baik anggota internal maupun eksternal, 
-                  yang ingin mendalami Linux dan ekosistem open source. Kami mendorong semangat eksplorasi, kontribusi, dan berbagi 
-                  ilmu melalui berbagai program edukatif dan komunitas yang suportif.
-                </p>
+                <FadeRight>
+                  <p className="text-gray-200 text-base leading-relaxed pt-2">
+                    Menjadikan BLUG sebagai ruang belajar dan berkembang untuk semua, baik anggota internal maupun eksternal, 
+                    yang ingin mendalami Linux dan ekosistem open source. Kami mendorong semangat eksplorasi, kontribusi, dan berbagi 
+                    ilmu melalui berbagai program edukatif dan komunitas yang suportif.
+                  </p>
+                </FadeRight>
               </div>
             </div>
           </div>
@@ -68,21 +88,25 @@ const TujuanSection = () => {
                 icon: <img src={ic_eye} className="w-12 h-12 text-gray-800" />,
                 bg: visiBackground,
                 desc: "Menjadikan BLUG sebagai organisasi yang memprioritaskan kepedulian terhadap setiap anggota, membantu mereka berkembang dalam hard skill & soft skill. serta memberikan kontribusi yang bermakna bagi masyarakat luas",
-                aos: "flip-left"
+                variants: variantsVisi
               },
               {
                 title: "Misi Kami",
                 icon: <img src={ic_target} className="w-12 h-12 text-gray-800" />,
                 bg: misiBackground,
                 desc: `Melibatkan semua anggota dalam kolaborasi setiap kegiatan BLUG, aktif dalam pengembangan mutu anggota, dan memberikan kontribusi yang bermanfaat bagi masyarakat luas, terutaman di kalangan Mahasiswa Politeknik Negei Batam `,
-                aos: "flip-right"
+                variants: variantsMisi
               },
             ].map((item, idx) => (
-              <div
+              <motion.div
                 key={idx}
                 className="flex flex-col relative w-full h-80 bg-[#3e3e3e] overflow-hidden group rounded-2xl border-4 border-transparent hover:border-primary transition-colors duration-700 justify-center items-center"
-                data-aos={item.aos}
-                data-aos-delay="200"
+                variants={item.variants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount:0.3}}
+                transition={{ duration: 0.75, ease: easeOut, animationDirection: 'normal' }}
+                style={{perspective: 1000, transformStyle: 'preserve-3d'}}
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-700"
@@ -101,16 +125,18 @@ const TujuanSection = () => {
                     {item.title}
                     </h3>
                   <div className="w-10 h-1 bg-primary mx-auto z-1 rounded"></div>
-              </div>
+              </motion.div>
             ))}
           </div>
 
           {/* CTA Button */}
-          <div className="text-center" data-aos="zoom-in">
-            <button onClick={handleClick} className="bg-transparent border-3 border-primary text-primary  px-6 py-2 rounded-full text-sm font-bold hover:bg-primary hover:text-gray-800 hover:border-3 hover:shadow-md hover:shadow-primary hover:border-secondary-dark transition-all duration-300 cursor-pointer">
-              Lihat Lebih Lanjut
-            </button>
-          </div>
+          <ZoomIn>
+            <div className="text-center">
+              <button onClick={handleClick} className="bg-transparent border-3 border-primary text-primary  px-6 py-2 rounded-full text-sm font-bold hover:bg-primary hover:text-gray-800 hover:border-3 hover:shadow-md hover:shadow-primary hover:border-secondary-dark transition-all duration-300 cursor-pointer">
+                Lihat Lebih Lanjut
+              </button>
+            </div>
+          </ZoomIn>
         </div>
       </div>
     </div>
