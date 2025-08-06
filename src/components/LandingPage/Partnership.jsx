@@ -15,19 +15,31 @@ const Partnership = () => {
 
   return (
     <section>
-      <div className="flex bg-primary w-full p-5 justify-center gap-30">
-        <img
-          src={cyberlabs}
-          alt="Logo CRC"
-          className="object-contain w-25 sm:w-50 h-auto"
-          data-aos="fade-right"
-        />
-        <img
-          src={logo_batamdev}
-          alt="Logo Batam Dev"
-          className="object-contain w-15 sm:w-30 h-auto"
-          data-aos="fade-left"
-        />
+      <div className="flex bg-primary w-full p-5 justify-center gap-30 items-center">
+        <a
+          href="https://pclabs.polibatam.ac.id"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={cyberlabs}
+            alt="Logo CRC"
+            className="object-contain w-25 sm:w-50 h-auto"
+            data-aos="fade-right"
+          />
+        </a>
+        <a
+          href="https://batamdev.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={logo_batamdev}
+            alt="Logo Batam Dev"
+            className="object-contain w-15 sm:w-30 h-auto"
+            data-aos="fade-left"
+          />
+        </a>
       </div>
       <div className="flex flex-col bg-secondary-dark pt-10 sm:pt-25 items-center">
         <div
