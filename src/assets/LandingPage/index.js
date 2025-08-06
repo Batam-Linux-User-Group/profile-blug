@@ -27,7 +27,7 @@ import Dot from './ProgramUnggulan/Dot.png';
 import BelajarProgramming from './ProgramUnggulan/Belajar_Programming.png';
 import Ngoding from './ProgramUnggulan/Ngoding.png';
 
-import logo_crc from "./Partnership/logo_crc.png";
+import cyberlabs from "./Partnership/cyberlabs.png";
 import logo_batamdev from "./Partnership/logo_batamdev.png";
 import bg_pengurus from "./Partnership/bg_pengurus.png";
 
@@ -41,5 +41,5 @@ export {
   longArrow1, longArrow2, bgStar,
   ic_eye, ic_target, background, decorativeImage, visiBackground, misiBackground,
   Bintang, BintangBesar, Garis, BelajarSiber, Hacker, Dot, BelajarProgramming, Ngoding,
-  logo_crc, logo_batamdev, bg_pengurus, ArrowVisiMisi, Next, FotoBlug, Lingkaran
+  cyberlabs, logo_batamdev, bg_pengurus, ArrowVisiMisi, Next, FotoBlug, Lingkaran
 };
