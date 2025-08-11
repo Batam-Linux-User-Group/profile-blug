@@ -20,8 +20,8 @@ const Partnership = () => {
     <section>
       <div className='flex bg-primary w-full p-5 justify-center gap-30'>
         <motion.img 
-          src={logo_crc} 
-          alt="Logo CRC" 
+          src={cyberlabs} 
+          alt="Logo cyberlabs" 
           className='object-contain w-25 sm:w-50 h-auto'
           initial={{opacity: 0, x: -50}}
           whileInView={{opacity: 1, x: 0}}
