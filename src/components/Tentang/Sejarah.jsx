@@ -11,16 +11,19 @@ const Sejarah = () => {
     <section className="bg-[#2A2A2A] text-white py-16 px-4 md:px-8 font-gilroy">
       <div className="max-w-5xl mx-auto flex flex-col gap-8 items-center">
         {/* Gambar */}
-        <ZoomOut delay={0.5}>
-          <div className="relative rounded-[30px] overflow-hidden w-full max-w-5xl">
+          <motion.div 
+            className="relative rounded-[30px] overflow-hidden w-full max-w-5xl"
+            initial={{opacity: 0, scale: 1.2}}
+            animate={{opacity: 1, scale: 1}}
+            transition={{ duration: 0.5, delay: 0.5, ease: easeOut }}
+          >
             <img
               src={poltek}
               alt="Poltek"
               className="w-full h-auto object-cove"
             />
             <div className="absolute inset-0 bg-primary opacity-50" />
-          </div>
-        </ZoomOut>
+          </motion.div>
 
         {/* Konten */}
         <div className="text-left w-full max-w-5xl">
