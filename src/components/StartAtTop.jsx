@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 
 const StartAtTop = () => {
   const { pathname } = useLocation();
@@ -8,7 +8,7 @@ const StartAtTop = () => {
     window.scrollTo(0,0);
   }, [pathname]);
 
-  return null;
+  return <Outlet />;
 }
 
 export default StartAtTop

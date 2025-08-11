@@ -5,12 +5,12 @@ import Tentang from "../pages/Tentang";
 import Pengurus from "../pages/Pengurus";
 import Artikel from "../pages/Artikel";
 import Kontak from "../pages/Kontak";
-import AOSWrapper from "../components/AOSWrapper";
+import StartAtTop from "../components/StartAtTop";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <AOSWrapper />,
+    element: <StartAtTop />,
     children: [
       {
         index: true,
