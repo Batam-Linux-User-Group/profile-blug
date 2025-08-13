@@ -2,8 +2,7 @@ import React from "react";
 import { motion, easeOut } from "motion/react";
 import background from "../assets/HubungiPage/background.png"; // Import tetap di sini
 import greenLine from "../assets/AltHero/line_green.png"; // Import tetap di sini
-import FlipDown from "./Animation/FlipDown";
-import ZoomIn from "./Animation/ZoomIn";
+
 
 const AltHero = ({ label, title, addStyle }) => {
   return (
@@ -46,6 +45,17 @@ const AltHero = ({ label, title, addStyle }) => {
                   />
                 </div>
               );
+            case "pengurus":
+              return (
+                <div className="flex flex-col">
+                  <h2 className="text-primary">
+                    Batam Linux User Group <span className="text-gray-800">2025</span>
+                  </h2>
+                  <svg className="relative w-100 self-center right-11" width="535" height="17" viewBox="0 0 535 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.00002 14.7918C118.737 7.14757 388.22 -4.95214 532.248 7.80264" stroke="#F9D00A" stroke-width="4" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              )
             case "kontak":
               return <div>Hubungi Kami</div>;
           }

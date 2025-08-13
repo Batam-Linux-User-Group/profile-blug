@@ -41,5 +41,5 @@ export {
   longArrow1, longArrow2, bgStar,
   ic_eye, ic_target, background, decorativeImage, visiBackground, misiBackground,
   Bintang, BintangBesar, Garis, BelajarSiber, Hacker, Dot, BelajarProgramming, Ngoding,
-  cyberlabs, logo_batamdev, bg_pengurus, ArrowVisiMisi, Next, FotoBlug, Lingkaran
+  cyberlabs, logo_batamdev, bg_pengurus, ArrowVisiMisi, Next, FotoBlug, Lingkaran,
 };
