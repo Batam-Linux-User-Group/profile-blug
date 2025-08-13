@@ -16,8 +16,8 @@ import hrdLogo from "../../assets/Pengurus/team/logo/hrd.png";
 const icons = [siberLogo, programmingLogo, medinLogo, hrdLogo];
 
 const divisions = [
-  { title: "siber", label: "Divisi Siber", image: siber, icon: icons[0], size: '83%' },
-  { title: "programming", label: "Divisi Programming", image: programming, icon: icons[1], size: '86%' },
+  { title: "siber", label: "Divisi Siber", image: siber, icon: icons[0], size: '82%' },
+  { title: "programming", label: "Divisi Programming", image: programming, icon: icons[1], size: '85%' },
   { title: "medin", label: "Divisi Medinfo", image: medin, icon: icons[2], size: '70%' },
   { title: "hrd", label: "Divisi HRD", image: inti, icon: icons[3], size: '80%' },
 ];
@@ -37,17 +37,17 @@ const TeamSection = () => {
   };
 
   return (
-    <section className="py-24">
+    <section className="py-32">
       <div className="max-w-5xl mx-auto">
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-32">
           {divisions.map((div, index) => (
             <div
               key={index}
               onClick={() => handleOpenModal(div.title)}
-              className="relative group rounded-3xl max-h-[500px] shadow-xl cursor-pointer bg-transparent"
+              className="relative group rounded-4xl max-h-[510px] cursor-pointer border-10 border-transparent bg-transparent transition duration-500 hover:shadow-xl hover:border-primary"
             >
               {/* Icon bulat kiri atas */}
-              <div className="absolute z-30" style={{ top: "-2rem", left: "2rem" }}>
+              <div className="absolute z-30 top-0 left-0 -translate-x-13 -translate-y-13">
                 <div className="w-30 h-30 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:scale-110">
                   <img src={div.icon} alt="icon" className="min-w-auto h-min" />
                 </div>
@@ -87,7 +87,7 @@ const TeamSection = () => {
                 <img
                   src={div.image}
                   alt={div.label}
-                  className="object-contain transition-transform duration-500 ease-in-out group-hover:scale-110"
+                  className="object-contain transition-transform duration-500 ease-in-out group-hover:scale-105"
                   style={{ maxWidth: div.size, maxHeight: div.size }}
                 />
               </div>
