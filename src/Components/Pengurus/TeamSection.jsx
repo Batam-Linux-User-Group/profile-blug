@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion, easeOut } from "motion/react";
 import PopupWithPagination from "../Modal/Popup"; 
 import {
   siber,
@@ -15,11 +16,22 @@ import hrdLogo from "../../assets/Pengurus/team/logo/hrd.png";
 
 const icons = [siberLogo, programmingLogo, medinLogo, hrdLogo];
 
+
+const rightVariants = {
+  hidden: {opacity: 0, x: -50},
+  visible: {opacity: 1, x: 0}
+}
+
+const leftVariants = {
+  hidden: {opacity: 0, x: 50},
+  visible: {opacity: 1, x: 0}
+}
+
 const divisions = [
-  { title: "siber", label: "Divisi Siber", image: siber, icon: icons[0], size: '82%' },
-  { title: "programming", label: "Divisi Programming", image: programming, icon: icons[1], size: '85%' },
-  { title: "medinfo", label: "Divisi Medinfo", image: medin, icon: icons[2], size: '70%' },
-  { title: "HRD", label: "Divisi HRD", image: inti, icon: icons[3], size: '80%' },
+  { title: "siber", label: "Divisi Siber", image: siber, icon: icons[0], size: '82%', variants: rightVariants },
+  { title: "programming", label: "Divisi Programming", image: programming, icon: icons[1], size: '85%', variants: leftVariants },
+  { title: "medinfo", label: "Divisi Medinfo", image: medin, icon: icons[2], size: '70%', variants: rightVariants },
+  { title: "HRD", label: "Divisi HRD", image: inti, icon: icons[3], size: '80%', variants: leftVariants },
 ];
 
 const TeamSection = () => {
@@ -41,10 +53,16 @@ const TeamSection = () => {
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col gap-32">
           {divisions.map((div, index) => (
-            <div
+            <motion.div
               key={index}
               onClick={() => handleOpenModal(div.title)}
-              className="relative group rounded-4xl max-h-[510px] cursor-pointer border-10 border-transparent bg-transparent transition duration-500 hover:shadow-xl hover:border-primary"
+              className="relative group rounded-4xl max-h-[510px] cursor-pointer border-10 border-transparent bg-transparent duration-500 hover:shadow-xl hover:border-primary"
+              variants={div.variants}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{once: true, amount:0.5}}
+              transition={{ duration: 0.5, ease: easeOut }}
+              style={{ transitionProperty: "box-shadow, color, border-color" }}
             >
               {/* Icon bulat kiri atas */}
               <div className="absolute z-30 top-0 left-0 -translate-x-13 -translate-y-13">
@@ -91,7 +109,7 @@ const TeamSection = () => {
                   style={{ maxWidth: div.size, maxHeight: div.size }}
                 />
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
