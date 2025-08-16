@@ -6,7 +6,7 @@ import { enru, felda, latifa, mifta, rafika, ririn } from "../assets/Pengurus/Mo
 import { rahel, ibnu, adib, alifstarboy, chiril, fuad, aziz, nazhwa, risi, yerico } from "../assets/Pengurus/ModalPengurus"
 
 export const pengurusDetail = {
-    programing: {
+    programming: {
       logoDivisi: ProgramingLogo,
       deskripsi: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quos earum magni, voluptatem voluptatum, reprehenderit consequuntur nesciunt similique accusantium dolor eius eum quae maiores ex soluta quaerat illum accusamus eaque?",
       anggota: [

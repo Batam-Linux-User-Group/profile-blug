@@ -18,8 +18,8 @@ const icons = [siberLogo, programmingLogo, medinLogo, hrdLogo];
 const divisions = [
   { title: "siber", label: "Divisi Siber", image: siber, icon: icons[0], size: '82%' },
   { title: "programming", label: "Divisi Programming", image: programming, icon: icons[1], size: '85%' },
-  { title: "medin", label: "Divisi Medinfo", image: medin, icon: icons[2], size: '70%' },
-  { title: "hrd", label: "Divisi HRD", image: inti, icon: icons[3], size: '80%' },
+  { title: "medinfo", label: "Divisi Medinfo", image: medin, icon: icons[2], size: '70%' },
+  { title: "HRD", label: "Divisi HRD", image: inti, icon: icons[3], size: '80%' },
 ];
 
 const TeamSection = () => {
