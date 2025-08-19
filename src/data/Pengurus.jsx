@@ -1,4 +1,4 @@
-import { ProgramingLogo, SiberLogo, MedinfoLogo } from "../assets/Pengurus/ModalPengurus";
+import { ProgramingLogo, SiberLogo, MedinfoLogo, hrdLogo } from "../assets/Pengurus/ModalPengurus";
 import {bagas, afif, alif, andika, elisya, lintang, michael, rafif, rendi, zaky, hafiz, tomi} from "../assets/Pengurus/ModalPengurus"
 import { shafiq, adam, akbar, aldy, bayu, fadlan, farhan, kelvin, nabila, nohiro, numa, salahudin, syahdan
 } from "../assets/Pengurus/ModalPengurus"
@@ -8,7 +8,7 @@ import { rahel, ibnu, adib, alifstarboy, chiril, fuad, aziz, nazhwa, risi, yeric
 export const pengurusDetail = {
     programming: {
       logoDivisi: ProgramingLogo,
-      deskripsi: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quos earum magni, voluptatem voluptatum, reprehenderit consequuntur nesciunt similique accusantium dolor eius eum quae maiores ex soluta quaerat illum accusamus eaque?",
+      deskripsi: "Divisi yang berfokus pada pengembangan kemampuan pemrograman bagi anggota BLUG maupun masyarakat umum. Programming menjadi wadah belajar, berbagi ilmu, dan mengembangkan project bersama di bidang software.",
       anggota: [
         { nama: "Bagas Satrio", jabatan: "Kepala Divisi", foto: bagas },
         { nama: "M. Afif Al Fawaz", jabatan: "Wakil Kepala Divisi", foto: afif },
@@ -23,10 +23,20 @@ export const pengurusDetail = {
         { nama: "Rendi Sinaga", jabatan: "Anggota", foto: rendi },
         { nama: "Andika Fathan", jabatan: "Anggota", foto: andika },
       ],
+      bullet: [
+        "BLUGCamp Programming",
+        "BnB Programming",
+        "Workshop Programming"
+      ],
+      bulletDesc: [
+        "Pelatihan programming untuk anggota",
+        "Belajar dan Berbagi bersama Programming",
+        "Webinar Programming dengan pemateri kece"
+      ]
     },
     siber: {
       logoDivisi: SiberLogo,
-      deskripsi: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quos earum magni, voluptatem voluptatum, reprehenderit consequuntur nesciunt similique accusantium dolor eius eum quae maiores ex soluta quaerat illum accusamus eaque?",
+      deskripsi: "Divisi yang bergerak di bidang keamanan siber dan jaringan komputer. Fokusnya adalah memperluas wawasan, melatih keterampilan, dan membangun kesadaran tentang pentingnya keamanan digital.",
       anggota: [
         { nama: "Shafiq", jabatan: "Kepala Divisi", foto: shafiq },
         { nama: "Bayu Arjuna", jabatan: "Wakil Kepala Divisi", foto: bayu},
@@ -42,11 +52,21 @@ export const pengurusDetail = {
         { nama: "Sahdan Arief", jabatan: "Anggota", foto: syahdan },
         { nama: "Akbar Hafiz", jabatan: "Anggota", foto: akbar },
       ],
+      bullet: [
+        "BLUGCamp Siber",
+        "BnB Siber",
+        "Workshop Siber"
+      ],
+      bulletDesc: [
+        "Pelatihan keamanan siber untuk anggota",
+        "Belajar dan Berbagi bersama Siber",
+        "Webinar Siber dengan pemateri kece"
+      ]
     },
 
     medinfo: {
       logoDivisi: MedinfoLogo,
-      deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo, ipsum ipsam magni temporibus voluptatibus commodi veniam ut totam reiciendis tempora id voluptas tempore possimus numquam accusantium voluptatem iste similique?",
+      deskripsi: "Divisi yang mengelola media informasi BLUG, termasuk sosial media, konten publikasi, dan dokumentasi kegiatan. Medinfo menjadi wajah organisasi dalam menyampaikan informasi kepada publik.",
       anggota: [
         { nama: "Rahel Simanjuntak", jabatan: "Kepala Divisi", foto: rahel },
         { nama: "Ibnu HS", jabatan: "Wakil Kepala Divisi", foto: ibnu },
@@ -59,10 +79,20 @@ export const pengurusDetail = {
         { nama: "Risi Gustiar", jabatan: "Anggota", foto: risi },
         { nama: "Yerico Marchel", jabatan: "Anggota", foto: yerico },
       ],
+      bullet: [
+        "Konten Sosial Media",
+        "Dokumentasi Program Kerja",
+        "Desain UI/UX"
+      ],
+      bulletDesc: [
+        "Membuat konten untuk sosial media BLUG",
+        "Melakukan dokumentasi dalam program kerja BLUG",
+        "Mendesain UI/UX dari website BLUG"
+      ]
     },
     HRD: {
-      logoDivisi: ProgramingLogo,
-      deskripsi: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate tempore harum animi. Sed itaque, quasi qui eveniet vel harum ab consequuntur nemo nesciunt similique voluptatem. Amet eligendi quis debitis esse!",
+      logoDivisi: hrdLogo,
+      deskripsi: "Divisi yang menjaga hubungan antar-anggota sekaligus membangun relasi dengan pihak luar. HRD juga memastikan kerja sama dan suasana internal tetap solid, nyaman, dan harmonis.",
       anggota:[
         { nama: "Ririn Anggraini", jabatan: "Kepala Divisi", foto: ririn },
         { nama: "Enru", jabatan: "Wakil Kepala Divisi", foto: enru },
@@ -70,6 +100,16 @@ export const pengurusDetail = {
         { nama: "Latifa", jabatan: "Anggota", foto: latifa },
         { nama: "Felda", jabatan: "Anggota", foto: felda },
         { nama: "Mifta", jabatan: "Anggota", foto: mifta },
+      ],
+      bullet: [
+        "Termin Evaluation",
+        "BLUG Birthday",
+        "Kegiatan Pengaderan"
+      ],
+      bulletDesc: [
+        "Melakukan evaluasi tiap termin",
+        "Mengatur perayaan ulang tahun BLUG",
+        "Mengorganisir kegiatan pengaderan bagi anggota baru"
       ]
     }
   };

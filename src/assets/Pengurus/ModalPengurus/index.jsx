@@ -2,9 +2,10 @@
 import ProgramingLogo from "./programing/programing.png"
 import SiberLogo from "./siber/siber.png"
 import MedinfoLogo from "./medinfo/medinfo.png"
+import hrdLogo from "./HRD/hrd.png"
 import BackgroundPoltek from "./bg.png"
 
-export {ProgramingLogo, SiberLogo, MedinfoLogo, BackgroundPoltek}
+export {ProgramingLogo, SiberLogo, MedinfoLogo, hrdLogo, BackgroundPoltek}
 
 
 
