@@ -115,22 +115,6 @@ const PopupWithPagination = ({ isOpen, onClose, divisiSelect }) => {
               </div>
             ))}
           </div>
-
-          {/* Member Counter - Mobile */}
-          {/* <div className="lg:hidden flex justify-center items-center gap-2 text-primary font-semibold">
-            <span className="text-sm">{index + 1}</span>
-            <div className="flex gap-1">
-              {anggota.map((_, i) => (
-                <div
-                  key={i}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    i === index ? "bg-yellow-400 scale-125" : "bg-gray-600"
-                  }`}
-                />
-              ))}
-            </div>
-            <span className="text-sm">{total}</span>
-          </div> */}
         </div>
 
         {/* RIGHT SIDE */}

@@ -1,4 +1,5 @@
-import { ProgramingLogo, SiberLogo, MedinfoLogo, hrdLogo } from "../assets/Pengurus/ModalPengurus";
+import { intiLogo, ProgramingLogo, SiberLogo, MedinfoLogo, hrdLogo } from "../assets/Pengurus/ModalPengurus";
+import { bayuMaulana, mirza, aurel, kayla, sonya, naylah } from "../assets/Pengurus/ModalPengurus";
 import {bagas, afif, alif, andika, elisya, lintang, michael, rafif, rendi, zaky, hafiz, tomi} from "../assets/Pengurus/ModalPengurus"
 import { shafiq, adam, akbar, aldy, bayu, fadlan, farhan, kelvin, nabila, nohiro, numa, salahudin, syahdan
 } from "../assets/Pengurus/ModalPengurus"
@@ -6,6 +7,28 @@ import { enru, felda, latifa, mifta, rafika, ririn } from "../assets/Pengurus/Mo
 import { rahel, ibnu, adib, alifstarboy, chiril, fuad, aziz, nazhwa, risi, yerico } from "../assets/Pengurus/ModalPengurus"
 
 export const pengurusDetail = {
+    inti: {
+      logoDivisi: intiLogo,
+      deskripsi: "Divisi yang bertanggung jawab dalam menjaga organisasi tetap berjalan, mengurus administrasi dan kearsipan, serta menjaga permasalahan internal & eksternal.",
+      anggota: [
+        { nama: "Bayu Maulana", jabatan: "Ketua Umum", foto: bayuMaulana },
+        { nama: "Mirza Ardanas", jabatan: "Wakil Ketua Umum", foto: mirza },
+        { nama: "Aurel Anatasya", jabatan: "Sekretaris 1", foto: aurel },
+        { nama: "Amatullah Nurkayla", jabatan: "Sekretaris 2", foto: kayla },
+        { nama: "Sonya Alya", jabatan: "Bendahara 1", foto: sonya },
+        { nama: "Naylah Amirah", jabatan: "Bendahara 2", foto: naylah },
+      ],
+      bullet: [
+        "Administrasi & Kearsipan",
+        "Rapat Koordinasi",
+        "Manajemen Organisasi"
+      ],
+      bulletDesc: [
+        "Mengurus dokumen, surat, dan arsip organisasi",
+        "Koordinasi rutin untuk memastikan divisi berjalan selaras",
+        "Mengatur jalannya organisasi agar tetap tertib dan terarah"
+      ]
+    },
     programming: {
       logoDivisi: ProgramingLogo,
       deskripsi: "Divisi yang berfokus pada pengembangan kemampuan pemrograman bagi anggota BLUG maupun masyarakat umum. Programming menjadi wadah belajar, berbagi ilmu, dan mengembangkan project bersama di bidang software.",
