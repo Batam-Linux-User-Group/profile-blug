@@ -24,7 +24,7 @@ export const pengurusDetail = {
         "Manajemen Organisasi"
       ],
       bulletDesc: [
-        "Mengurus dokumen, surat, dan arsip organisasi",
+        "Mengurus dokumen, surat, arsip organisasi, serta hal administrasi lainnya",
         "Koordinasi rutin untuk memastikan divisi berjalan selaras",
         "Mengatur jalannya organisasi agar tetap tertib dan terarah"
       ]
