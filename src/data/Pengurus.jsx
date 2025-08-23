@@ -24,9 +24,9 @@ export const pengurusDetail = {
         "Manajemen Organisasi"
       ],
       bulletDesc: [
-        "Mengurus dokumen, surat, arsip organisasi, serta hal administrasi lainnya",
-        "Koordinasi rutin untuk memastikan divisi berjalan selaras",
-        "Mengatur jalannya organisasi agar tetap tertib dan terarah"
+        "Mengurus dokumen, surat, arsip organisasi, serta hal administrasi lainnya.",
+        "Koordinasi rutin untuk memastikan divisi berjalan selaras.",
+        "Mengatur jalannya organisasi agar tetap tertib dan terarah."
       ]
     },
     programming: {
@@ -52,9 +52,9 @@ export const pengurusDetail = {
         "Workshop Programming"
       ],
       bulletDesc: [
-        "Pelatihan programming untuk anggota",
-        "Belajar dan Berbagi bersama Programming",
-        "Webinar Programming dengan pemateri kece"
+        "Pelatihan programming untuk anggota.",
+        "Belajar dan Berbagi bersama Programming.",
+        "Webinar Programming dengan pemateri kece."
       ]
     },
     siber: {
@@ -81,9 +81,9 @@ export const pengurusDetail = {
         "Workshop Siber"
       ],
       bulletDesc: [
-        "Pelatihan keamanan siber untuk anggota",
-        "Belajar dan Berbagi bersama Siber",
-        "Webinar Siber dengan pemateri kece"
+        "Pelatihan keamanan siber untuk anggota.",
+        "Belajar dan Berbagi bersama Siber.",
+        "Webinar Siber dengan pemateri kece."
       ]
     },
 
@@ -108,9 +108,9 @@ export const pengurusDetail = {
         "Desain UI/UX"
       ],
       bulletDesc: [
-        "Membuat konten untuk sosial media BLUG",
-        "Melakukan dokumentasi dalam program kerja BLUG",
-        "Mendesain UI/UX dari website BLUG"
+        "Membuat konten untuk sosial media BLUG.",
+        "Melakukan dokumentasi dalam program kerja BLUG.",
+        "Mendesain UI/UX dari website BLUG."
       ]
     },
     HRD: {
@@ -130,9 +130,9 @@ export const pengurusDetail = {
         "Kegiatan Pengaderan"
       ],
       bulletDesc: [
-        "Melakukan evaluasi tiap termin",
-        "Mengatur perayaan ulang tahun BLUG",
-        "Mengorganisir kegiatan pengaderan bagi anggota baru"
+        "Melakukan evaluasi tiap termin.",
+        "Mengatur perayaan ulang tahun BLUG.",
+        "Mengorganisir kegiatan pengaderan bagi anggota baru."
       ]
     }
   };
