@@ -4,7 +4,6 @@ import { poltek } from '../../assets/Tentang';
 import FlipUp from '../Animation/FlipUp';
 import FadeRight from '../Animation/FadeRight';
 import FadeLeft from '../Animation/FadeLeft';
-import ZoomOut from '../Animation/ZoomOut';
 
 const Sejarah = () => {
   return (
