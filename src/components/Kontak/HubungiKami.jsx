@@ -1,24 +1,39 @@
-import React from 'react';
-import bg_star from '../../assets/HubungiPage/bg_star.png';
-import cardImage from '../../assets/HubungiPage/imagecard.png';
+import { React, useState, useEffect } from "react";
+import bg_star from "../../assets/HubungiPage/bg_star.png";
+import cardImage from "../../assets/HubungiPage/imagecard.png";
+import cardImageLarge from "../../assets/HubungiPage/imagecard-large.png";
 import FlipLeft from "../Animation/FlipLeft";
 import FlipRight from "../Animation/FlipRight";
 
 const HubungiKami = () => {
+  const [isMediumScreen, setIsMediumScreen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMediumScreen(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const cardBg = isMediumScreen ? cardImageLarge : cardImage;
+
   return (
     <div
       className="w-full bg-no-repeat"
       style={{ backgroundImage: `url(${bg_star})` }}
     >
-      <div className="lg:max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 py-20">
+      <div className="lg:max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-5 lg:py-20 items-stretch">
         {/* Kartu Kontak */}
         <FlipLeft>
-          <div className="relative rounded-2xl overflow-hidden text-white shadow-xl">
+          <div className="h-full relative lg:rounded-2xl overflow-hidden text-white lg:shadow-xl">
             <div
-              className="bg-opacity-60 p-15 h-full flex flex-col"
+              className="bg-opacity-60 px-4 md:px-16 py-16 h-full flex flex-col bg-cover"
               style={{
-                backgroundImage: `url(${cardImage})`,
-                backgroundPosition: 'center',
+                backgroundImage: `url(${cardBg})`,
+                backgroundPosition: "center",
               }}
             >
               <div>
@@ -37,7 +52,10 @@ const HubungiKami = () => {
               <div className="space-y-6">
                 <div className="flex items-start gap-3">
                   <div className="bg-primary p-3 rounded-full">
-                    <img src="/icon/ic_call_black.svg" className="size-7" />
+                    <img
+                      src="/icon/ic_call_black.svg"
+                      className="size-5 lg:size-7"
+                    />
                   </div>
                   <div>
                     <p className="font-bold">Aurellia - Sekretaris 1</p>
@@ -46,7 +64,10 @@ const HubungiKami = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="bg-primary p-3 rounded-full">
-                    <img src="/icon/ic_call_black.svg" className="size-7" />
+                    <img
+                      src="/icon/ic_call_black.svg"
+                      className="size-5 lg:size-7"
+                    />
                   </div>
                   <div>
                     <p className="font-bold">Kayla - Sekretaris 2</p>
@@ -55,7 +76,10 @@ const HubungiKami = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="bg-primary p-3 rounded-full">
-                    <img src="/icon/ic_email_black.svg" className="size-7" />
+                    <img
+                      src="/icon/ic_email_black.svg"
+                      className="size-5 lg:size-7"
+                    />
                   </div>
                   <div>
                     <p className="font-bold">Contact Us!</p>
@@ -69,7 +93,7 @@ const HubungiKami = () => {
 
         {/* Form Kirim Pesan */}
         <FlipRight>
-          <div className="bg-white p-10 rounded-2xl shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+          <div className="h-full bg-white px-4 py-10 md:px-16 lg:px-10 lg:rounded-2xl lg:shadow-[0_0_10px_rgba(0,0,0,0.1)]">
             <h3 className="text-4xl font-black mb-6">Kirim Kami Pesan</h3>
             <form className="space-y-1">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -100,14 +124,20 @@ const HubungiKami = () => {
                   />
                 </div>
               </div>
-              <label htmlFor="email" className="text-sm text-gray-800 font-bold">
+              <label
+                htmlFor="email"
+                className="text-sm text-gray-800 font-bold"
+              >
                 Email
               </label>
               <input
                 type="email"
                 className="w-full border p-3 rounded-md bg-accent-3 border-transparent"
               />
-              <label htmlFor="subjek" className="text-sm text-gray-800 font-bold">
+              <label
+                htmlFor="subjek"
+                className="text-sm text-gray-800 font-bold"
+              >
                 Subjek
               </label>
               <input
@@ -115,7 +145,10 @@ const HubungiKami = () => {
                 className="w-full border p-3 rounded-md bg-accent-3 border-transparent"
                 id="subjek"
               />
-              <label htmlFor="pesan" className="text-sm text-gray-800 font-bold">
+              <label
+                htmlFor="pesan"
+                className="text-sm text-gray-800 font-bold"
+              >
                 Pesan
               </label>
               <textarea

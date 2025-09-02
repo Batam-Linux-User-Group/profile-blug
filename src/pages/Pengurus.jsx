@@ -21,7 +21,7 @@ const Pengurus = () => {
 
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <AltHero label="Temui Tim Kami" title="Badan Pengurus Harian" addStyle="pengurus"/>
 
       {isLargeScreen ? (
