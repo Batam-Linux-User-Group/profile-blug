@@ -3,7 +3,7 @@ import intiImage from './inti-image.webp'
 import lurus from './lurus.png'
 import poltek from './poltek.webp'
 import inti from './team/Inti.png'
-import medin from "./team/Medin.png"
+import medin from "./team/medin.png"
 import programming from "./team/Programming.png"
 import siber from "./team/Siber.png"
 

@@ -1,37 +1,64 @@
-import React, { useState } from "react";
-import { motion, easeOut } from "motion/react";
-import PopupWithPagination from "../Modal/Popup"; 
+import { easeOut, motion } from 'motion/react';
+import React, { useState } from 'react';
 import {
-  siber,
-  programming,
-  medin,
   inti,
-  poltek,
   lurus,
-} from "../../assets/Pengurus";
-import siberLogo from "../../assets/Pengurus/team/logo/siber.png";
-import programmingLogo from "../../assets/Pengurus/team/logo/Programming.png";
-import medinLogo from "../../assets/Pengurus/team/logo/medin.png";
-import hrdLogo from "../../assets/Pengurus/team/logo/hrd.png";
+  medin,
+  poltek,
+  programming,
+  siber,
+} from '../../assets/Pengurus';
+import hrdLogo from '../../assets/Pengurus/team/logo/hrd.png';
+import medinLogo from '../../assets/Pengurus/team/logo/medin.png';
+import programmingLogo from '../../assets/Pengurus/team/logo/prog.png';
+import siberLogo from '../../assets/Pengurus/team/logo/siber.png';
+import PopupWithPagination from '../Modal/Popup';
 
 const icons = [siberLogo, programmingLogo, medinLogo, hrdLogo];
 
-
 const rightVariants = {
-  hidden: {opacity: 0, x: -50},
-  visible: {opacity: 1, x: 0}
-}
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0 },
+};
 
 const leftVariants = {
-  hidden: {opacity: 0, x: 50},
-  visible: {opacity: 1, x: 0}
-}
+  hidden: { opacity: 0, x: 50 },
+  visible: { opacity: 1, x: 0 },
+};
 
 const divisions = [
-  { title: "siber", label: "Divisi Siber", image: siber, icon: icons[0], size: '82%', variants: rightVariants },
-  { title: "programming", label: "Divisi Programming", image: programming, icon: icons[1], size: '85%', variants: leftVariants },
-  { title: "medinfo", label: "Divisi Medinfo", image: medin, icon: icons[2], size: '70%', variants: rightVariants },
-  { title: "HRD", label: "Divisi HRD", image: inti, icon: icons[3], size: '80%', variants: leftVariants },
+  {
+    title: 'siber',
+    label: 'Divisi Siber',
+    image: siber,
+    icon: icons[0],
+    size: '82%',
+    variants: rightVariants,
+  },
+  {
+    title: 'programming',
+    label: 'Divisi Programming',
+    image: programming,
+    icon: icons[1],
+    size: '85%',
+    variants: leftVariants,
+  },
+  {
+    title: 'medinfo',
+    label: 'Divisi Medinfo',
+    image: medin,
+    icon: icons[2],
+    size: '70%',
+    variants: rightVariants,
+  },
+  {
+    title: 'HRD',
+    label: 'Divisi HRD',
+    image: inti,
+    icon: icons[3],
+    size: '80%',
+    variants: leftVariants,
+  },
 ];
 
 const TeamSection = () => {
@@ -58,11 +85,11 @@ const TeamSection = () => {
               onClick={() => handleOpenModal(div.title)}
               className="relative group rounded-4xl max-h-[510px] cursor-pointer border-10 border-transparent bg-transparent duration-500 hover:shadow-xl hover:border-primary"
               variants={div.variants}
-              initial='hidden'
-              whileInView='visible'
-              viewport={{once: true, amount:0.5}}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5, ease: easeOut }}
-              style={{ transitionProperty: "box-shadow, color, border-color" }}
+              style={{ transitionProperty: 'box-shadow, color, border-color' }}
             >
               {/* Icon bulat kiri atas */}
               <div className="absolute z-30 top-0 left-0 -translate-x-13 -translate-y-13">
