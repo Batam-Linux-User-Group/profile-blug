@@ -1,44 +1,51 @@
-import React, { useState } from "react";
-import {ic_eye, ic_target, background, decorativeImage, visiBackground, misiBackground} from "../../assets/LandingPage/index"
-import { useNavigate } from "react-router-dom";
-import FlipDown from "../Animation/FlipDown";
-import FadeUp from "../Animation/FadeUp";
-import FadeRight from "../Animation/FadeRight";
-import { motion, easeOut } from "motion/react";
-import ZoomIn from "../Animation/ZoomIn";
+import { easeOut, motion } from 'motion/react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import {
+  background,
+  decorativeImage,
+  ic_eye,
+  ic_target,
+  misiBackground,
+  visiBackground,
+} from '../../assets/LandingPage/index';
+import FadeRight from '../Animation/FadeRight';
+import FadeUp from '../Animation/FadeUp';
+import FlipDown from '../Animation/FlipDown';
+import ZoomIn from '../Animation/ZoomIn';
 
 const TujuanSection = () => {
   const variantsVisi = {
-    hidden: {opacity: 0, rotateY: -90},
-    visible: {opacity: 1, rotateY: 0}
-  }
+    hidden: { opacity: 0, rotateY: -90 },
+    visible: { opacity: 1, rotateY: 0 },
+  };
   const variantsMisi = {
-    hidden: {opacity: 0, rotateY: 90},
-    visible: {opacity: 1, rotateY: 0}
-  }  
+    hidden: { opacity: 0, rotateY: 90 },
+    visible: { opacity: 1, rotateY: 0 },
+  };
 
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/tentang')
-  }
+    navigate('/tentang');
+  };
 
   return (
     <div
       className="text-white relative bg-cover bg-center bg-no-repeat py-10"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(${background})`,
-        filter: "blur(px)",
+        filter: 'blur(px)',
       }}
     >
       {/* Overlay untuk menghilangkan blur dari konten utama */}
-      <div className="inset-0" style={{ filter: "blur(0px)" }}>
+      <div className="inset-0" style={{ filter: 'blur(0px)' }}>
         {/* Background decorative elements dengan blur */}
         <div
           className="absolute bottom-40 right-40 w-45 h-30 opacity-60 bg-cover bg-center"
           style={{
             backgroundImage: `url(${decorativeImage})`,
-            filter: "blur(2px)",
+            filter: 'blur(2px)',
           }}
         ></div>
 
@@ -71,9 +78,11 @@ const TujuanSection = () => {
                 ></div>
                 <FadeRight>
                   <p className="text-gray-200 text-base leading-relaxed pt-2">
-                    Menjadikan BLUG sebagai ruang belajar dan berkembang untuk semua, baik anggota internal maupun eksternal, 
-                    yang ingin mendalami Linux dan ekosistem open source. Kami mendorong semangat eksplorasi, kontribusi, dan berbagi 
-                    ilmu melalui berbagai program edukatif dan komunitas yang suportif.
+                    Menjadikan BLUG sebagai ruang belajar dan berkembang untuk
+                    semua, baik anggota internal maupun eksternal, yang ingin
+                    mendalami Linux dan ekosistem open source. Kami mendorong
+                    semangat eksplorasi, kontribusi, dan berbagi ilmu melalui
+                    berbagai program edukatif dan komunitas yang suportif.
                   </p>
                 </FadeRight>
               </div>
@@ -84,18 +93,20 @@ const TujuanSection = () => {
             {/* Card Template */}
             {[
               {
-                title: "Visi Kami",
+                title: 'Visi Kami',
                 icon: <img src={ic_eye} className="w-12 h-12 text-gray-800" />,
                 bg: visiBackground,
-                desc: "Menjadikan BLUG sebagai organisasi yang memprioritaskan kepedulian terhadap setiap anggota, membantu mereka berkembang dalam hard skill & soft skill. serta memberikan kontribusi yang bermakna bagi masyarakat luas",
-                variants: variantsVisi
+                desc: 'Menjadikan BLUG sebagai organisasi yang memprioritaskan kepedulian terhadap setiap anggota, membantu mereka berkembang dalam hard skill & soft skill. serta memberikan kontribusi yang bermakna bagi masyarakat luas',
+                variants: variantsVisi,
               },
               {
-                title: "Misi Kami",
-                icon: <img src={ic_target} className="w-12 h-12 text-gray-800" />,
+                title: 'Misi Kami',
+                icon: (
+                  <img src={ic_target} className="w-12 h-12 text-gray-800" />
+                ),
                 bg: misiBackground,
                 desc: `Melibatkan semua anggota dalam kolaborasi setiap kegiatan BLUG, aktif dalam pengembangan mutu anggota, dan memberikan kontribusi yang bermanfaat bagi masyarakat luas, terutaman di kalangan Mahasiswa Politeknik Negei Batam `,
-                variants: variantsMisi
+                variants: variantsMisi,
               },
             ].map((item, idx) => (
               <motion.div
@@ -104,27 +115,31 @@ const TujuanSection = () => {
                 variants={item.variants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{once: true, amount:0.3}}
-                transition={{ duration: 0.75, ease: easeOut, animationDirection: 'normal' }}
-                style={{perspective: 1000, transformStyle: 'preserve-3d'}}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{
+                  duration: 0.75,
+                  ease: easeOut,
+                  animationDirection: 'normal',
+                }}
+                style={{ perspective: 1000, transformStyle: 'preserve-3d' }}
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-700"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(${item.bg})`
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(${item.bg})`,
                   }}
                 />
                 <p className="absolute start-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-xs text-gray-200 w-3/4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                      {item.desc}
-                    </p>
+                  {item.desc}
+                </p>
                 {/* Overlay */}
-                  <div className="bg-primary w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                    {item.icon}
-                  </div>
-                    <h3 className="transition-transform duration-700 transform group-hover:-translate-y-25 font-black text-2xl mb-2 text-white">
-                    {item.title}
-                    </h3>
-                  <div className="w-10 h-1 bg-primary mx-auto z-1 rounded"></div>
+                <div className="bg-primary w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="transition-transform duration-700 transform group-hover:-translate-y-25 font-black text-2xl mb-2 text-white">
+                  {item.title}
+                </h3>
+                <div className="w-10 h-1 bg-primary mx-auto z-1 rounded"></div>
               </motion.div>
             ))}
           </div>
@@ -132,7 +147,10 @@ const TujuanSection = () => {
           {/* CTA Button */}
           <ZoomIn>
             <div className="text-center">
-              <button onClick={handleClick} className="bg-transparent border-3 border-primary text-primary  px-6 py-2 rounded-full text-sm font-bold hover:bg-primary hover:text-gray-800 hover:border-3 hover:shadow-md hover:shadow-primary hover:border-secondary-dark transition-all duration-300 cursor-pointer">
+              <button
+                onClick={handleClick}
+                className="bg-transparent border-3 border-primary text-primary  px-6 py-2 rounded-full text-sm font-bold hover:bg-primary hover:text-gray-800 hover:border-3 hover:shadow-md hover:shadow-primary hover:border-secondary-dark transition-all duration-300 cursor-pointer"
+              >
                 Lihat Lebih Lanjut
               </button>
             </div>
